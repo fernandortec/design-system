@@ -1,8 +1,8 @@
-export const radii = {
-	px: "1px",
-	xs: "4px",
-	sm: "6px",
-	md: "8px",
-	lg: "16px",
-	full: "99999px",
+export const radii: { [key: string]: { value: string } } = {
+	px: { value: "1px" },
+	xs: { value: "4px" },
+	sm: { value: "6px" },
+	md: { value: "8px" },
+	lg: { value: "16px" },
+	full: { value: "99999px" },
 };

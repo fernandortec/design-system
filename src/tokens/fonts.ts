@@ -1,4 +1,4 @@
-export const fonts = {
-	default: "Roboto, sans-serif",
-	code: "monospace",
+export const fonts: { [key: string]: { value: string } } = {
+	default: { value: "Roboto, sans-serif" },
+	code: { value: "monospace" },
 };
