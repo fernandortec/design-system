@@ -9,7 +9,7 @@ import { defineConfig } from "@pandacss/dev";
 
 export default defineConfig({
 	preflight: true,
-	include: ["./src/**/*.tsx"],
+	include: ["./src/**/*.tsx", "./stories/**/*.tsx"],
 	exclude: [],
 	theme: {
 		extend: {

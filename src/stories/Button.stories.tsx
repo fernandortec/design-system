@@ -8,5 +8,7 @@ export default {
 	args: { children: "Enviar" },
 } satisfies Meta;
 
-export const Primary: StoryObj<ButtonProps> = {};
-export const Big: StoryObj<ButtonProps> = { args: { size: "big" } };
+type Story = StoryObj<ButtonProps>;
+
+export const Primary: Story = {};
+export const Big: Story = { args: { size: "big" } };

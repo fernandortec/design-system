@@ -1,5 +1,4 @@
 import { type StyledComponent, styled } from "@/panda/jsx";
-import "../index.css";
 
 export const Button = styled("button", {
 	base: {
