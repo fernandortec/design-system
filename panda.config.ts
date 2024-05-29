@@ -9,7 +9,7 @@ import { defineConfig } from "@pandacss/dev";
 
 export default defineConfig({
 	preflight: true,
-	include: ["./src/**/*.tsx", "./stories/**/*.tsx"],
+	include: ["./src/**/*.tsx", "./src/stories/**/*.{js,jsx,ts,tsx}"],
 	exclude: [],
 	theme: {
 		extend: {
@@ -25,5 +25,5 @@ export default defineConfig({
 		},
 	},
 	outdir: "(styled-system)",
-	jsxFramework: "solid",
+	jsxFramework: "react",
 });
