@@ -1,7 +1,7 @@
-import type { StorybookConfig } from "storybook-solidjs-vite";
+import type { StorybookConfig } from "@storybook/react-vite";
 
 const config: StorybookConfig = {
-	stories: ["../src/pages/*.mdx", "../src/stories/*.stories.tsx"],
+	stories: ["../src/**/*.mdx", "../src/stories/*.stories.tsx"],
 	addons: [
 		"@storybook/addon-links",
 		"@storybook/addon-essentials",
@@ -9,7 +9,7 @@ const config: StorybookConfig = {
 		"@storybook/addon-interactions",
 	],
 	framework: {
-		name: "storybook-solidjs-vite",
+		name: "@storybook/react-vite",
 		options: {},
 	},
 };

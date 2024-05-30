@@ -1,5 +1,5 @@
 import { Button, type ButtonProps } from "@/stories/Button";
-import type { Meta, StoryObj } from "storybook-solidjs";
+import type { Meta, StoryObj } from "@storybook/react";
 
 export default {
 	title: "Button",

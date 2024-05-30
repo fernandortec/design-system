@@ -1,6 +1,6 @@
 import "../src/index.css";
-import { background, themes } from "@storybook/theming";
-import type { Preview } from "storybook-solidjs";
+import type { Preview } from "@storybook/react";
+import { themes } from "@storybook/theming";
 
 const preview: Preview = {
 	parameters: {
@@ -10,6 +10,7 @@ const preview: Preview = {
 				date: /Date$/i,
 			},
 		},
+		docs: { theme: themes.dark },
 		backgrounds: { default: "dark" },
 	},
 };
