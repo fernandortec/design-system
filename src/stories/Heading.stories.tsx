@@ -8,6 +8,14 @@ export default {
 	args: {
 		children: "Example heading",
 	},
+	parameters: {
+		docs: {
+			description: {
+				story:
+					'Por padrão, o componente renderiza um `<h2>`".',
+			},
+		},
+	},
 } satisfies Meta;
 
 type Story = StoryObj<HeadingProps>;
