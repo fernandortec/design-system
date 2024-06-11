@@ -15,3 +15,5 @@ export function Avatar(props: AvatarProps): JSX.Element {
 		</S.AvatarContainer>
 	);
 }
+
+Avatar.displayName = "Avatar";

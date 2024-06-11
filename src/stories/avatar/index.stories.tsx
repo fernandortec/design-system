@@ -9,6 +9,11 @@ export default {
 		src: "https://github.com/fernandortec.png",
 		alt: "Fernando Rodrigues",
 	},
+	argTypes: {
+		src: {
+			control: { type: "text" },
+		},
+	},
 } satisfies Meta;
 
 type Story = StoryObj<AvatarProps>;

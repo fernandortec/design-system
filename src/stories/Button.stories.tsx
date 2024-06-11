@@ -6,12 +6,30 @@ export default {
 	title: "Form/Button",
 	component: Button,
 
-	args: { children: "Send" },
+	args: { children: "Send", variant: "primary", size: "md", disabled: false },
+	argTypes: {
+		variant: {
+			options: ["primary", "secondary", "tertiary"],
+			control: { type: "inline-radio" },
+		},
+		size: {
+			options: ["sm", "md"],
+			control: { type: "inline-radio" },
+		},
+		disabled: {
+			control: { type: "boolean" },
+		},
+		onClick: { action: "click" },
+	},
 } satisfies Meta;
 
 type Story = StoryObj<ButtonProps>;
 
-export const Primary: Story = {};
+export const Primary: Story = {
+	args: {
+		disabled: false,
+	},
+};
 export const Secondary: Story = {
 	args: {
 		variant: "secondary",

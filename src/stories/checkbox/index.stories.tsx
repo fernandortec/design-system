@@ -1,6 +1,6 @@
 import { Box } from "@/stories/Box";
 import { Text } from "@/stories/Text";
-import { Checkbox, type CheckboxProps } from "@/stories/checkout";
+import { Checkbox, type CheckboxProps } from "@/stories/checkbox";
 
 import type { Meta, StoryObj } from "@storybook/react";
 

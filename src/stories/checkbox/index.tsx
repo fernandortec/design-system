@@ -15,3 +15,5 @@ export function Checkbox(props: CheckboxProps): JSX.Element {
 		</S.CheckboxContainer>
 	);
 }
+
+Checkbox.displayName = "Checkbox";

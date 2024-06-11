@@ -7,13 +7,19 @@ export default {
 
 	args: {
 		children: "Example heading",
+		size: "md"
 	},
 	parameters: {
 		docs: {
 			description: {
-				story:
-					'Por padrão, o componente renderiza um `<h2>`".',
+				story: 'Por padrão, o componente renderiza um `<h2>`".',
 			},
+		},
+	},
+	argTypes: {
+		size: {
+			options: ["sm", "md", "lg", "2xl", "4xl", "5xl", "6xl"],
+			control: { type: "inline-radio" },
 		},
 	},
 } satisfies Meta;

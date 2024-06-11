@@ -7,12 +7,9 @@ export default {
 	component: Box,
 
 	args: {
-		children: (
-			<>
-				<Text>Testando o elemento box</Text>
-			</>
-		),
+		children: <Text>Testando o elemento box</Text>,
 	},
+	argTypes: { children: { control: { type: "text" } } },
 } satisfies Meta;
 
 type Story = StoryObj<BoxProps>;

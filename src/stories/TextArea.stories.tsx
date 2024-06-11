@@ -15,6 +15,12 @@ export default {
 			</Box>
 		),
 	],
+	argTypes: {
+				variant: {
+			options: ["primary", "secondary", "tertiary"],
+			control: { type: "inline-radio" },
+		},
+	}
 } satisfies Meta;
 
 type Story = StoryObj<TextAreaProps>;
