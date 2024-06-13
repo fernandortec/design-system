@@ -21,7 +21,10 @@ jobs:
       - name: Build
         run: bun run build
 
+      - name: Build storybook
+        run: bun run build-storybook
+
       - name: Deploy storybook
-        run: bun run deploy-storybook -- --existing-output-dir=storybook-static
+        run: bun run deploy-storybook --existing-output-dir=storybook-static
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
